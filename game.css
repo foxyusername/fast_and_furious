@@ -1,0 +1,114 @@
+
+*{
+  margin:0px;
+  padding:0px;
+}
+body {
+    background-color:aqua;
+  }
+#score {
+  position:relative;
+  text-align:center;
+  top:100px;
+  z-index:2;
+}
+
+#square {
+position:relative;
+left:200px;
+  top:547px;
+ border:none;
+ width:140px;
+ height:130px;
+  cursor:pointer;
+z-index:1;
+background-image:url(car.PNG);
+background-size:140px 130px;
+}
+.jump {
+  animation:jump 0.3s linear;
+}
+#square2 {
+  position:relative;
+width:40px;
+height:60px;
+top:450px;
+left:1300px;
+  animation-name:gameanimation;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  background-image: url(cactus.PNG);
+  background-size:40px 60px;
+  border:none;
+  z-index:2;
+}
+.square3 {
+  position:relative;
+  background-color:green;
+  width:1450px;
+  height:40px;
+top:450px;
+right:100px;
+}
+
+
+.wre {
+  position:relative;
+  background-color:whitesmoke;
+ bottom:180px;
+  left:1400px;
+    width:130px;
+    height:50px;
+    border-radius:70%;
+  animation-name:wreanimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  z-index:1;
+}
+.wre2 {
+    position:relative;
+  background-color:whitesmoke;
+bottom:210px;
+left:1400px;
+    width:130px;
+    height:50px;
+    border-radius:70%;
+    animation-name:wreanimation2;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+    z-index:1;
+  }
+
+
+@keyframes gameanimation {
+        0%{left:1300px}
+        100%{left:-100px;}
+
+}
+@keyframes wreanimation {
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(-1600px);}
+}
+@keyframes wreanimation2 {
+    0%{transform:translateX(0px);}
+    100%{transform:translateX(-1600px);}
+} 
+@keyframes jump {
+  0%{
+    top:547px;
+  }
+   30%{
+      top:447px;
+
+    }
+    50%{
+      top:347px;
+    }
+    80%{
+      top:447px;
+    
+    }
+    100% {
+      top:547px;
+    }
+}
